@@ -34,5 +34,12 @@ do
   sed -i '' 's|{{lien_order}}|'"../index.html#${order}"'|g' "./assets/$code.html";
   sed -i '' 's|{{lien_family}}|'"../index.html#${family}"'|g' "./assets/$code.html";
 
+  NOW=$(date +"%Y/%m/%d %H:%M:%S")
+
+  sed -i '' 's|{{date}}|'"${NOW}"'|g' "./assets/$code.html";
 
 done < ./data/data.csv
+
+
+NOW=$(date +"%Y/%m/%d %H:%M:%S")
+sed -i '' 's|{{date}}|'"${NOW}"'|g' "./index.html";
