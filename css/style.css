@@ -8,7 +8,7 @@ body {
 
 .content {
   background-color: white;
-  padding: 20px;
+  padding: 50px;
   border-radius: 10px;
   box-shadow: 8px 8px 12px #aaa;
 }
@@ -23,12 +23,11 @@ h1 {
 }
 
 a {
-  color: black;
+  color: #437492;
   text-decoration: none;
 }
 
 a:hover {
-  color: #437492;
   text-decoration: underline;
 }
 
@@ -82,10 +81,9 @@ img.image {
   text-decoration: underline;
 }
 
-.espece {
-  color: #437492;
+/* .espece {
   text-decoration: underline;
-}
+} */
 
 .droite {
   text-align: right;
@@ -132,4 +130,7 @@ footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   padding-top: 10px;
+}
+.cellule{
+  padding-left: 20px;
 }

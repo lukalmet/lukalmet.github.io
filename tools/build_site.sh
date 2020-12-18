@@ -31,8 +31,8 @@ do
   sed -i '' 's|{{nicheur}}|'"${nicheur}"'|g' "./assets/$code.html";
   sed -i '' 's|{{longueur}}|'"${longueur}"'|g' "./assets/$code.html";
   sed -i '' 's|{{envergure}}|'"${envergure}"'|g' "./assets/$code.html";
-  sed -i '' 's|{{lien_order}}|'"${lien_order}"'|g' "./assets/$code.html";
-  sed -i '' 's|{{lien_family}}|'"${lien_family}"'|g' "./assets/$code.html";
+  sed -i '' 's|{{lien_order}}|'"../index.html#${order}"'|g' "./assets/$code.html";
+  sed -i '' 's|{{lien_family}}|'"../index.html#${family}"'|g' "./assets/$code.html";
 
 
 done < ./data/data.csv

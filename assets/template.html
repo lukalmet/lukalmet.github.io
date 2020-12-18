@@ -15,14 +15,14 @@
 
     <table>
       <tr>
-        <td><img src="../img/{{code}}.jpg" class="image" width="250px"/><p class="source"><i>Source des données : {{source_image}}<i></p></td>
+        <td><img src="../img/{{code}}.jpg" class="image" width="250px"/><p class="source"><i>Crédit : {{source_image}}<i></p></td>
 
-       <td>
+       <td class="cellule">
           <h1>{{french}}</h1>
 
           <h2><i>{{binomial}}</i> ({{author}})</h2>
 
-          <h3>Famille : <a href="{{lien_family}}">{{family}}</a>, Ordre : <a href="{{lien_order}}">{{order}}</a></h3>
+          <p><b>Ordre : </b><a href="{{lien_order}}">{{order}}</a> - <b>Famille : </b><a href= "{{lien_family}}">{{family}}</a></p>
 
           <table>
             <tr>
@@ -34,31 +34,27 @@
             </tr>
           </table>
 
-          <h3>Description :</h3>
-          <ul>
-            <li><b>Envergure :</b> {{envergure}}</li>
-            <li><b>Longueur :</b> {{longueur}}</li>
-          </ul>
-
+          <p><b>Envergure : </b>{{envergure}}</p>
+          <p><b>Longueur : </b>{{longueur}}</p>
           <p><b>Alimentation : </b>{{alimentation}}</p>
+          <p><b>Habitat : </b>{{habitat}}</p>
         </td>
       </tr>
 
       <tr>
-        <td>
-          <p><b>Habitat : </b> {{habitat}}</p>
-
-          <p><b>Espèce migratrice : </b>{{migrateur}}</p>
-          <h3>Répartition en France :</h3>
-
+        <td class="c">
+          <h3>Répartition en France</h3>
           <ul>
             <li><b>Résident :</b> {{resident}}</li>
             <li><b>Hivernant :</b> {{hivernant}}</li>
             <li><b>Nicheur :</b> {{nicheur}}</li>
           </ul>
+
+          <p><b>Espèce migratrice : </b>{{migrateur}}</p>
+
         </td>
         <td>
-          <img src="../img/map-{{code}}.png" class="image" width="500px"/>
+          <img src="../img/map-{{code}}.png" class="image" width="420px"/>
           <p class="source"><i>Source des données : Bird Life International</i></p>
         </td>
       </tr>
